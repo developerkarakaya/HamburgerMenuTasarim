@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Responsive Hamburger Menu By Samet Karakaya</title>
+    <link rel="stylesheet" href="style.css" type="text/css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width">
+   <script>
+        
+        $(document).ready(function()  {
+            /* times adındaki iconu gizledim. */    
+            $(".btn .fa-times").hide(); 
+        
+             $(".btn .fa-bars").click(function() {
+                 /*bars iconuna tıkladığımızda kendi kendini gizleyecek*/
+                $(this).hide(); 
+                 /*bars gizlendikten hemen sonra times açılacak*/
+                 $(".btn .fa-times").show();
+                 /*times açıldıktan hemen sonra canli adında ki sınıfımız açılacak*/
+                 $(".mob ul").addClass("canli");
+             });    
+            
+            
+            
+            
+                         $(".btn .fa-times").click(function() {
+                 /*bars iconuna tıkladığımızda kendi kendini gizleyecek*/
+                $(this).hide(); 
+                 /*bars gizlendikten hemen sonra times açılacak*/
+                 $(".btn .fa-bars").show();
+                 /*times açıldıktan hemen sonra canli adında ki sınıfımız açılacak*/
+                 $(".mob ul").removeClass("canli");
+             });             
+            
+        });
+        
+        
+        </script>
+    </head>
+    
+    <body>
+        <div class="genel" >
+            <nav class="desk" >
+              
+                <ul>
+                    <li><a href="#" >Anasayfa</a></li>
+                    <li><a href="#" >Hakkımda</a></li>
+                    <li><a href="#" >Referans</a></li>
+                    <li><a href="#" >Blog</a></li>
+                    <li><a href="#" >İletişim</a></li>
+
+                </ul>
+            </nav>
+            
+            <nav class="mob" >
+               
+               <div class="btn" >
+                   <i class="fa fa-bars" ></i>
+                    <i class="fa fa-times" ></i>
+
+               </div>
+               
+               
+               
+               
+                <ul>
+                    <li><a href="#" >Anasayfa</a></li>
+                    <li><a href="#" >Hakkımda</a></li>
+                    <li><a href="#" >Referans</a></li>
+                    <li><a href="#" >Blog</a></li>
+                    <li><a href="#" >İletişim</a></li>
+
+                </ul>
+            </nav>
+            
+            <div class="header">
+
+                
+                <h1 style="text-align: center; color: white; line-height: 700px; " >www.sametmirzakarakaya.com</h1>
+           
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         
+        
+    </body>
+</html>
